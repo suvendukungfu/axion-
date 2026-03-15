@@ -1,0 +1,33 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="topLevel" x1="50" y1="10" x2="50" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A33"/>
+      <stop offset="1" stop-color="#FF6A00"/>
+    </linearGradient>
+    <linearGradient id="leftLevel" x1="15" y1="35" x2="50" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#333333"/>
+      <stop offset="1" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="rightLevel" x1="50" y1="55" x2="85" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- Left Face -->
+    <path d="M50 55 L15 35 L15 75 L50 95 Z" fill="url(#leftLevel)"/>
+    <!-- Right Face -->
+    <path d="M50 55 L85 35 L85 75 L50 95 Z" fill="url(#rightLevel)"/>
+    <!-- Top Face -->
+    <path d="M50 15 L85 35 L50 55 L15 35 Z" fill="url(#topLevel)"/>
+  </g>
+  
+  <!-- Internal Highlights (Layered Security Concept) -->
+  <path d="M50 17 L82 35 L50 53 L18 35 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+  <path d="M48 56 L16 38 L16 73 L48 92 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  <path d="M52 56 L84 38 L84 73 L52 92 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+</svg>
